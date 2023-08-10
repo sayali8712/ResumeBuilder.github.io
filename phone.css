@@ -1,0 +1,85 @@
+/* navigation */
+#navbar1{
+    flex-direction: column;
+}
+
+#navbar1 ul li a{
+    font-size: 0.9rem;
+    padding:0px 7px;
+    padding-bottom: 8px;
+}
+
+/* Home section */
+
+#home1{
+    height:370px;
+    padding:3px 28px;
+}
+
+#home1::before{
+    height:480px;
+}
+
+#home1 p{
+    font-size: 13px;
+}
+
+#home1 h1{
+    font-size: 30px;
+}
+
+/* step section */
+
+#step{
+    flex-wrap: wrap;
+}
+
+#step img{
+    width:60px;
+    padding:6px;
+    height:auto;
+}
+
+.h-primary{
+    font-size: 26px;
+}
+
+.btn1{
+    font-size: 10px;
+    padding: 4px 8px;
+}
+
+.btn2{
+    font-size: 10px;
+    padding: 4px 8px;
+}
+
+/* #temp10{
+    flex-wrap: wrap;
+    width:10px;
+
+} */
+
+#temp10 img{
+    width:10px;
+    /* 60 */
+    padding:6px;
+    height:auto;
+}
+
+#temp10 .box img{
+    width:150px;
+    height:200px;
+}
+
+#template1 h1{
+    font-size: 15px;
+    margin-left: 2px;
+}
+
+#template1 #temp10{
+    padding: 3px 150px;
+    flex-wrap: wrap;
+    width:10px;
+}
+

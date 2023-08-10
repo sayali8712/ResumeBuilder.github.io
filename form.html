@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="Screen and (max-width:1170px)" href="phone.css">
+    
+
+<title>Form</title>
+</head>
+<body>
+
+
+    <section id="template1">
+        <button class="btn2"><a href="index.html">Back to Home page</a></button>
+        <h1 class="h-primary center">Choose your Template</h1>
+        <br>
+        
+        <div id="temp10">
+            <div class="box" id="box1">
+                <h1 class="center">Persistent</h1>
+                <img src="img/ditemp2new.PNG" alt=" ">
+                
+                <div class="center"><button onclick="showform1()" class="btn2">Use this Template</button></div>
+                
+                
+                
+            </div>
+            <div class="box" id="box2">
+                <h1 class="center">Wipro</h1>
+                <img src="img/ditemp3.PNG" alt=" ">
+                <div class="center"><button onclick="showform2()" class="btn2">Use this Template</button></div>
+                
+            </div>
+            <div class="box" id="box3">
+                <h1 class="center">Capgemini</h1>
+                <img src="img/ditemp.PNG" alt=" ">
+                <!-- <div class="center"><button class="btn2">Use this Template</button></div> -->
+                <div class="center"><button onclick="showform3()" class="btn2">Use this Template</button></div>
+                
+            </div>
+
+            <div class="box" id="box4">
+                <h1 class="center">TCS</h1>
+                <img src="img/temp4.PNG" alt=" ">
+                <!-- <div class="center"><button class="btn2">Use this Template</button></div> -->
+                <div class="center"><button onclick="showform4()" class="btn2">Use this Template</button></div>
+                
+            </div>
+
+
+           
+
+        </div>
+
+    </section>
+
+
+
+    <!-- form for template1 -->
+    <div class="container" id="cv-form">
+        <h1 class="text-center my-2">Fill the Information</h1>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-6 black1">
+                <h3>Personal Information</h3>
+                <div class="form-group">
+                    <label for="nameField">Your Name</label>
+                    <input type="text" id="nameField" placeholder="Enter here" class="form-control"/>
+                </div>
+                <div class="form-group mt-2">
+                    <label for="ContactField">Your Contact </label>
+                    <input type="text" id="ContactField" placeholder="Enter here" class="form-control"/>
+                </div>
+
+                <div class="form-group mt-2">
+                    <label for="addressField">Your Address</label>
+                    <textarea id="addressField" placeholder="Enter here" class="form-control" rows="5"></textarea>
+                </div>
+
+                <div class="form-group mt-3">
+                    <label for="">Select your photo</label>
+                    <input id="imgField" type="file" class="form-control"/>
+                </div>
+
+                <p class="text-secondary my-3">Important Links</p>
+
+                <div class="form-group mt-2">
+                    <label for="fbField">Facebook</label>
+                    <input type="text" id="fbField" placeholder="Enter here" class="form-control">
+                </div>
+
+                <div class="form-group mt-2">
+                    <label for="InstaField">Instagram</label>
+                    <input type="text" id="InstaField" placeholder="Enter here" class="form-control">
+                </div>
+
+                <div class="form-group mt-2">
+                    <label for="linkedField">LinkedIn</label>
+                    <input type="text" id="linkedField" placeholder="Enter here" class="form-control">
+                </div>
+
+                <div class="form-group mt-2">
+                    <label for="stackField">StackOverflow profile</label>
+                    <input type="text" id="stackField" placeholder="Enter here" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-6 black1">
+                <h3>Professional Information</h3>
+                <div class="form-group mt-2">
+                    <label for="objectiveField">Objectives</label>
+                    <textarea id="objectiveField" placeholder="Enter here" class="form-control" rows="5"></textarea>
+                </div>
+                <div class="form-group mt-2" id="we">
+                    <label for="wexp">Academic Qualification</label>
+                    <textarea id="wexp" placeholder="Enter here" class="form-control weField" rows="3"></textarea>
+
+
+                    <div class="container text-center mt-2" id="weAddButton">
+                        <button onclick="addNewWEFeild()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+                </div>
+
+                <div class="form-group mt-2" id="eq">
+                    <label for="aqua">Projects</label>
+                    <textarea id="aqua" placeholder="Enter here" class="form-control eqField" rows="3"></textarea>
+
+                    <div class="container text-center mt-2" id="eqAddButton">
+                        <button onclick="addNeweqFeild()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+                </div>
+                <!-- certificates -->
+                <div class="form-group mt-2" id="cer">
+                    <label for="cer1">Certificates</label>
+                    <textarea id="cer1" placeholder="Enter here" class="form-control cerField" rows="3"></textarea>
+
+                    <div class="container text-center mt-2" id="eqAddButton11">
+                        <button onclick="addNewcerFeild()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+                </div>
+                <!-- Skills -->
+                <div class="form-group mt-2" id="perskil">
+                    <label for="perskil1">Skills</label>
+                    <textarea id="perskil1" placeholder="Enter here" class="form-control skilField" rows="3"></textarea>
+
+                    <div class="container text-center mt-2" id="eqAddButton12">
+                        <button onclick="addNewskiFeild()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="container text-center mt-3">
+            <button onclick="generateCV()" class="btn btn-primary btn-lg">Generate CV</button>
+    
+        </div>
+        <!-- <div>
+            <a href="choose.html">Choose template</a>
+        </div> -->
+
+    </div>
+
+    <!-- form for template2 -->
+
+    <div class="container" id="cv-form2">
+        <h1 class="text-center my-2">Fill the Information</h1>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-6 black1">
+                <h3>Personal Information</h3>
+                <div class="form-group">
+                    <label for="nameField5">First Name</label>
+                    <input type="text" id="nameField5" placeholder="Enter here" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label for="nameField6">Last Name</label>
+                    <input type="text" id="nameField6" placeholder="Enter here" class="form-control"/>
+                </div>
+                <div class="form-group mt-2">
+                    <label for="ContactField5">Your Contact </label>
+                    <input type="text" id="ContactField5" placeholder="Enter here" class="form-control"/>
+                </div>
+
+                <div class="form-group mt-2">
+                    <label for="addressField5">Your Address</label>
+                    <textarea id="addressField5" placeholder="Enter here" class="form-control" rows="5"></textarea>
+                </div>
+
+                <p class="text-secondary my-3">Important Links</p>
+
+                <div class="form-group mt-2">
+                    <label for="fbField5">Facebook</label>
+                    <input type="text" id="fbField5" placeholder="Enter here" class="form-control">
+                </div>
+
+                <div class="form-group mt-2">
+                    <label for="linkedField5">LinkedIn</label>
+                    <input type="text" id="linkedField5" placeholder="Enter here" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-6 black1">
+                <h3>Professional Information</h3>
+                <div class="form-group mt-2">
+                    <label for="objectiveField5">Objectives</label>
+                    <textarea id="objectiveField5" placeholder="Enter here" class="form-control" rows="5"></textarea>
+                </div>
+                <div class="form-group mt-2" id="we5">
+                    <label for="wexp5">Experience</label>
+                    <textarea id="wexp5" placeholder="Enter here" class="form-control exField5" rows="3"></textarea>
+
+
+                    <div class="container text-center mt-2" id="weAddButton5">
+                        <button onclick="addNewWEFeild5()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+                </div>
+
+                <div class="form-group mt-2" id="eq5">
+                    <label for="aqua5">Education</label>
+                    <textarea id="aqua5" placeholder="Enter here" class="form-control eqField5" rows="3"></textarea>
+
+                    <div class="container text-center mt-2" id="eqAddButton6">
+                        <button onclick="addNeweqFeild6()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+                </div>
+
+                <div class="form-group mt-2" id="ski5">
+                    <label for="skill5">Skills</label>
+                    <textarea id="skill5" placeholder="Enter here" class="form-control skiField5" rows="3"></textarea>
+
+                    <div class="container text-center mt-2" id="eqAddButton7">
+                        <button onclick="addNeweqFeild7()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+                </div>
+
+                <div class="form-group mt-2" id="ac5">
+                    <label for="act5">Activities</label>
+                    <textarea id="act5" placeholder="Enter here" class="form-control acField5" rows="3"></textarea>
+
+                    <div class="container text-center mt-2" id="eqAddButton8">
+                        <button onclick="addNeweqFeild8()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="container text-center mt-3">
+            <button onclick="generateCV2()" class="btn btn-primary btn-lg">Generate CV</button>
+    
+        </div>
+    </div>
+
+    <!-- form for template3 -->
+    <div class="container" id="cv-form1">
+        <h1 class="text-center my-2">Fill the Information</h1>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-6 black1">
+                <h3>Personal Information</h3>
+                
+                <div class="form-group">
+                    <label for="nameField1">Your Name</label>
+                    <input type="text" id="nameField1" placeholder="Enter here" class="form-control"/>
+                </div>
+                <div class="form-group mt-2">
+                    <label for="ContactField1">Your Contact </label>
+                    <input type="text" id="ContactField1" placeholder="Enter here" class="form-control"/>
+                </div>
+
+                <div class="form-group mt-2">
+                    <label for="addressField1">Your Address</label>
+                    <textarea id="addressField1" placeholder="Enter here" class="form-control" rows="5"></textarea>
+                </div>
+
+                <div class="form-group mt-3">
+                    <label for="">Select your photo</label>
+                    <input id="imgField1" type="file" class="form-control"/>
+                </div>
+
+                <p class="text-secondary my-3">Important Links</p>
+
+                <div class="form-group mt-2">
+                    <label for="fbField1">Facebook</label>
+                    <input type="text" id="fbField1" placeholder="Enter here" class="form-control">
+                </div>
+
+                <div class="form-group mt-2">
+                    <label for="InstaField1">Instagram</label>
+                    <input type="text" id="InstaField1" placeholder="Enter here" class="form-control">
+                </div>
+
+                <div class="form-group mt-2">
+                    <label for="linkedField1">LinkedIn</label>
+                    <input type="text" id="linkedField1" placeholder="Enter here" class="form-control">
+                </div>
+
+            </div>
+            <div class="col-md-6 black1">
+                <h3>Professional Information</h3>
+                
+                <div class="form-group mt-2">
+                    <label for="objectiveField1">Objectives</label>
+                    <textarea id="objectiveField1" placeholder="Enter here" class="form-control" rows="5"></textarea>
+                </div>
+                
+
+                <div class="form-group mt-2" id="eq1">
+                    <label for="aqua1">Academic Qualification</label>
+                    <textarea id="aqua1" placeholder="Enter here" class="form-control eqField1" rows="3"></textarea>
+
+                    <div class="container text-center mt-2" id="eqAddButton1">
+                        <button onclick="addNeweqFeild1()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+                </div>
+
+                <div class="form-group mt-2" id="we1">
+                    <label for="wexp1">Internship</label>
+                    <textarea id="wexp1" placeholder="Enter here" class="form-control weField1" rows="3"></textarea>
+
+
+                    <div class="container text-center mt-2" id="weAddButton1">
+                        <button onclick="addNewWEFeild1()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+                </div>
+
+                <div class="form-group mt-2" id="we2">
+                    <label for="wexp1">Projects</label>
+                    <textarea id="wexp1" placeholder="Enter here" class="form-control weField2" rows="3"></textarea>
+
+
+                    <div class="container text-center mt-2" id="weAddButton2">
+                        <button onclick="addNewWEFeild2()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+                </div>
+
+                <div class="form-group mt-2" id="pl1">
+                    <label for="wexp1">Programming Languages</label>
+                    <textarea id="wexp1" placeholder="Enter here" class="form-control weField3" rows="3"></textarea>
+
+
+                    <div class="container text-center mt-2" id="pl1button1">
+                        <button onclick="addNewWEFeild3()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="container text-center mt-3">
+            <button onclick="generateCV1()" class="btn btn-primary btn-lg">Generate CV</button>
+    
+        </div>
+        <!-- <div>
+            <a href="choose.html">Choose template</a>
+        </div> -->
+
+    </div>
+
+
+
+    <!-- form for template4 -->
+
+    <div class="container" id="cv-form4">
+        <h1 class="text-center my-2">Fill the Information</h1>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-6 black1">
+                <h3>Personal Information</h3>
+                <div class="form-group">
+                    <label for="form4name">Name</label>
+                    <input type="text" id="form4name" placeholder="Enter here" class="form-control"/>
+                </div>
+               
+                <div class="form-group mt-2">
+                    <label for="form4contact">Your Contact </label>
+                    <input type="text" id="form4contact" placeholder="Enter here" class="form-control"/>
+                </div>
+
+                <div class="form-group mt-2">
+                    <label for="form4address">Your Address</label>
+                    <textarea id="form4address" placeholder="Enter here" class="form-control" rows="5"></textarea>
+                </div>
+
+                <div class="form-group mt-2">
+                    <label for="form4dob">Date Of Birth</label>
+                    <input type="text" id="form4dob" placeholder="Enter here" class="form-control"/>
+                </div>
+
+                <div class="form-group mt-2">
+                    <label for="form4gender">Gender</label>
+                    <input type="text" id="form4gender" placeholder="Enter here" class="form-control"/>
+                </div>
+
+                <div class="form-group mt-2">
+                    <label for="form4lang">Languages known</label>
+                    <input type="text" id="form4lang" placeholder="Enter here" class="form-control"/>
+                </div>
+
+                <p class="text-secondary my-3">Important Links</p>
+
+                
+                <div class="form-group mt-2">
+                    <label for="form4mail">MailId</label>
+                    <input type="text" id="form4mail" placeholder="Enter here" class="form-control">
+                </div>
+                <h3>Educational qualification</h3>
+
+                <div class="form-group mt-2">
+                    <label for="form4sscdegree">First(e.g. SSC)</label>
+                    <input type="text" id="form4sscdegree" placeholder="Enter here" class="form-control">
+                </div>
+                <div class="form-group mt-2">
+                    <label for="form4sscinsti">S.S.C. School</label>
+                    <input type="text" id="form4sscinsti" placeholder="Enter here" class="form-control">
+                </div>
+                <div class="form-group mt-2">
+                    <label for="form4sscboard">S.S.C. Borad</label>
+                    <input type="text" id="form4sscboard" placeholder="Enter here" class="form-control">
+                </div>
+                <div class="form-group mt-2">
+                    <label for="form4sscyr">S.S.C. Passout Year</label>
+                    <input type="text" id="form4sscyr" placeholder="Enter here" class="form-control">
+                </div>
+                <div class="form-group mt-2">
+                    <label for="form4sscmark">S.S.C. Marks</label>
+                    <input type="text" id="form4sscmark" placeholder="Enter here" class="form-control">
+                </div>
+
+
+
+                <div class="form-group mt-2">
+                    <label for="form4hscdegree">Second(e.g.HSC)</label>
+                    <input type="text" id="form4hscdegree" placeholder="Enter here" class="form-control">
+                </div>
+                <div class="form-group mt-2">
+                    <label for="form4hscinsti">H.S.C. College</label>
+                    <input type="text" id="form4hscinsti" placeholder="Enter here" class="form-control">
+                </div>
+                <div class="form-group mt-2">
+                    <label for="form4hscboard">H.S.C. Borad</label>
+                    <input type="text" id="form4hscboard" placeholder="Enter here" class="form-control">
+                </div>
+                <div class="form-group mt-2">
+                    <label for="form4hscyr">H.S.C. Passout Year</label>
+                    <input type="text" id="form4hscyr" placeholder="Enter here" class="form-control">
+                </div>
+                <div class="form-group mt-2">
+                    <label for="form4hscmark">H.S.C. Marks</label>
+                    <input type="text" id="form4hscmark" placeholder="Enter here" class="form-control">
+                </div>
+
+
+                <div class="form-group mt-2">
+                    <label for="form4tedegree">Third(e.g.T.E.(computer))</label>
+                    <input type="text" id="form4tedegree" placeholder="Enter here" class="form-control">
+                </div>
+                <div class="form-group mt-2">
+                    <label for="form4teinsti">T.E. Institute</label>
+                    <input type="text" id="form4teinsti" placeholder="Enter here" class="form-control">
+                </div>
+                <div class="form-group mt-2">
+                    <label for="form4teboard">T.E. University</label>
+                    <input type="text" id="form4teboard" placeholder="Enter here" class="form-control">
+                </div>
+                <div class="form-group mt-2">
+                    <label for="form4teyr">T.E. Passout Year</label>
+                    <input type="text" id="form4teyr" placeholder="Enter here" class="form-control">
+                </div>
+                <div class="form-group mt-2">
+                    <label for="form4temark">T.E. Marks</label>
+                    <input type="text" id="form4temark" placeholder="Enter here" class="form-control">
+                </div>
+
+
+                <div class="form-group mt-2">
+                    <label for="form4sedegree">Fourth(e.g.S.E.(computer))</label>
+                    <input type="text" id="form4sedegree" placeholder="Enter here" class="form-control">
+                </div>
+                <div class="form-group mt-2">
+                    <label for="form4seinsti">S.E. Institute</label>
+                    <input type="text" id="form4seinsti" placeholder="Enter here" class="form-control">
+                </div>
+                <div class="form-group mt-2">
+                    <label for="form4seboard">S.E. University</label>
+                    <input type="text" id="form4seboard" placeholder="Enter here" class="form-control">
+                </div>
+                <div class="form-group mt-2">
+                    <label for="form4seyr">S.E. Passout Year</label>
+                    <input type="text" id="form4seyr" placeholder="Enter here" class="form-control">
+                </div>
+                <div class="form-group mt-2">
+                    <label for="form4semark">S.E. Marks</label>
+                    <input type="text" id="form4semark" placeholder="Enter here" class="form-control">
+                </div>
+
+
+                <div class="form-group mt-2">
+                    <label for="form4fedegree">Fifth(e.g.F.E.(Computer))</label>
+                    <input type="text" id="form4fedegree" placeholder="Enter here" class="form-control">
+                </div>
+                <div class="form-group mt-2">
+                    <label for="form4feinsti">F.E. Institute</label>
+                    <input type="text" id="form4feinsti" placeholder="Enter here" class="form-control">
+                </div>
+                <div class="form-group mt-2">
+                    <label for="form4feboard">F.E. University</label>
+                    <input type="text" id="form4feboard" placeholder="Enter here" class="form-control">
+                </div>
+                <div class="form-group mt-2">
+                    <label for="form4feyr">F.E. Passout Year</label>
+                    <input type="text" id="form4feyr" placeholder="Enter here" class="form-control">
+                </div>
+                <div class="form-group mt-2">
+                    <label for="form4femark">F.E. Marks</label>
+                    <input type="text" id="form4femark" placeholder="Enter here" class="form-control">
+                </div>
+
+
+                <div class="form-group mt-2">
+                    <label for="form4agremark">Aggegate Marks</label>
+                    <input type="text" id="form4agremark" placeholder="Enter here" class="form-control">
+                </div>
+                
+            </div>
+            <div class="col-md-6 black1">
+                <h3>Professional Information</h3>
+                <div class="form-group mt-2">
+                    <label for="form4objective">Objectives</label>
+                    <textarea id="form4objective" placeholder="Enter here" class="form-control" rows="5"></textarea>
+                </div>
+
+                <div class="form-group mt-2">
+                    <label for="form4prolang">Programming Languages</label>
+                    <textarea id="form4prolang" placeholder="Enter here" class="form-control" rows="5"></textarea>
+                </div>
+
+                <div class="form-group mt-2">
+                    <label for="form4dblang">Database Languages</label>
+                    <textarea id="form4dblang" placeholder="Enter here" class="form-control" rows="5"></textarea>
+                </div>
+                
+
+                <div class="form-group mt-2" id="form4intern">
+                    <label for="form4internfield">Experience</label>
+                    <textarea id="form4internfield" placeholder="Enter here" class="form-control form4internclass" rows="3"></textarea>
+
+
+                    <div class="container text-center mt-2" id="form4addintern">
+                        <button onclick="addnewintern()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+                </div>
+
+                <div class="form-group mt-2" id="form4project">
+                    <label for="form4projectfield">Projects</label>
+                    <textarea id="form4projectfield" placeholder="Enter here" class="form-control form4projectclass" rows="3"></textarea>
+
+                    <div class="container text-center mt-2" id="form4addproject">
+                        <button onclick="addnewproject()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+                </div>
+
+                <div class="form-group mt-2" id="form4skill">
+                    <label for="form4skillfield">Skills</label>
+                    <textarea id="form4skillfield" placeholder="Enter here" class="form-control form4skillclass" rows="3"></textarea>
+
+                    <div class="container text-center mt-2" id="form4addskill">
+                        <button onclick="addnewskill()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+                </div>
+
+                <div class="form-group mt-2" id="form4hobbies">
+                    <label for="form4hobbiesfield">Hobbies</label>
+                    <textarea id="form4hobbiesfield" placeholder="Enter here" class="form-control form4hobbiesclass" rows="3"></textarea>
+
+                    <div class="container text-center mt-2" id="form4addhobbies">
+                        <button onclick="addnewhobbies()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="container text-center mt-3">
+            <button onclick="generateCV4()" class="btn btn-primary btn-lg">Generate CV</button>
+    
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- cv template1 -->
+    <div class="container" id="cv-template">
+        <div class="row">
+            <div class="col-md-4 py-5 background text-center">
+                <!-- first column -->
+                <img src="http://naikenviro.net/wp-content/uploads/2018/06/null.jpg" alt="" class="img-fluid myimg imgd text-center" id="imgTemplate"/>
+                <br>
+                <br>
+                <div class="container">
+                    
+                    
+                    <p id="nameT1" class="text-center color2">Sayali Ratan shriwastav</p><br>
+                    <p id="addressT" class="text-center color2">New Ratnadeep stores mainroad niphad</p>
+                    <h3>Contact</h3>
+                    <hr style="width:100%;height:3px;border-width:0;width:97%;margin-left: auto;margin-right: auto; color:white;background-color:white;opacity:0.9">
+            
+                    <p id="contactT" class="color2">+78410964512,+7834666778</p>
+
+                    <hr>
+
+                    <p>
+                        <a id="fbT" href="#1" class="text-center">https://www.facebook.com/LearnCodeWith</a>
+                    </p>
+                    <p>
+                        <a id="instaT" href="#1" class="text-center">https://www.instagram.com/LearnCodeWith</a>
+                    </p>
+                    <p>
+                        <a id="linkedT" href="#1" class="text-center">https://www.linkedin.com/LearnCodeWith</a>
+                    </p>
+                    <br>
+                    <br>
+                    <h3>StackOverflow Profile</h3>
+                    <hr style="width:100%;height:3px;border-width:0;width:97%;margin-left: auto;margin-right: auto; color:white;background-color:white;opacity:0.9">
+                    <p>
+                        <a id="stT" href="#1" class="text-center">https://StackOverflow.com/LearnCodeWith</a>
+                    </p>
+
+                    <br>
+                    <br>
+                    
+
+                </div>
+            </div>
+            <div class="col-md-8 py-5">
+                <!-- second column -->
+                <h1 id="nameT2" class="text-center" style="font-weight:980;">Sayali Ratan Shriwastav</h1>
+
+                <!-- objective card -->
+                <div class="card mt-4">
+                    <div class="card-header background">
+                        <h3>Objective</h3>
+                    </div>
+                    <div class="card-body">
+                        <p id="objectiveT">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat rerum maiores deserunt doloremque similique, obcaecati quidem saepe aspernatur, dolorum consequuntur accusantium dolor animi deleniti provident reiciendis magnam dolore facilis fuga unde quae. Quidem facilis a voluptatum, natus aut cum repudiandae optio expedita eum ab nulla itaque minima voluptate tenetur deleniti.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- work experience -->
+                <div class="card mt-4">
+                    <div class="card-header background">
+                        <h3>Academic Qualification</h3>
+                    </div>
+                    <div class="card-body">
+                        
+
+                        <ul id="weT">
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, accusamus.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, accusamus.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, accusamus.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- projects -->
+
+                <div class="card mt-4">
+                    <div class="card-header background">
+                        <h3>Projects</h3>
+                    </div>
+                    <div class="card-body">
+                        
+
+                        <ul id="aq">
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, accusamus.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, accusamus.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, accusamus.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Certificates -->
+
+                <div class="card mt-4">
+                    <div class="card-header background">
+                        <h3>Certificates</h3>
+                    </div>
+                    <div class="card-body">
+                        
+
+                        <ul id="cq">
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, accusamus.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, accusamus.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, accusamus.</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="card mt-4">
+                    <div class="card-header background">
+                        <h3>Skills</h3>
+                    </div>
+                    <div class="card-body">
+                        
+                        <ul type="none" id="perskill">
+                                <li>Sketching</li>
+                                <li>Dancing</li>
+                                <li>Singing</li>
+                        </ul>
+                                
+                    </div>
+                </div>
+                
+
+                
+
+                <div class="container mt-3 text-center">
+                    <button onclick="printcv()" class="btn background">
+                        Print CV
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- cv template2 -->
+    <div class="container" id="cv-template1">
+        <div class="row">
+            
+            <div class="container flex1 py-2">
+                <div>
+                    <p id="nameT5">Sayali</p>
+                    <p id="nameT6">Shriwastav</p>
+                </div>
+                
+                <div class="link1">
+                    <p id="contactT5">+78410964512,+7834666778</p>
+                    <p id="addressT5">5678943657/86754 Sector 35 Noida ,India</p>
+                    <p>
+                        <a id="fbT5" href="#1" class="text-center ">https://www.facebook.com/LearnCodeWith</a>
+                    </p>
+                    <p>
+                        <a id="linkedT5" href="#1" class="text-center">https://www.linkedin.com/LearnCodeWith</a>
+                    </p>
+                </div>
+                
+                
+            </div>
+            <hr style="width:100%;height:6px;border-width:0;width:97%;margin-left: auto;margin-right: auto; color:#022D36;background-color:#022D36;opacity:0.9">
+            
+            <div class="col-md-12 py-2">
+                
+               
+               
+                    <div class="card mt-4">
+                        <div class="card-header color1 flex1">
+                            
+                            
+                            <h3>Objective</h3>
+                        </div>
+                        <div class="card-body">
+                            <p id="objectiveT5">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat rerum maiores deserunt doloremque similique, obcaecati quidem saepe aspernatur, dolorum consequuntur accusantium dolor animi deleniti provident reiciendis magnam dolore facilis fuga unde quae. Quidem facilis a voluptatum, natus aut cum repudiandae optio expedita eum ab nulla itaque minima voluptate tenetur deleniti.
+                            </p>
+                        </div>
+                    </div>
+                
+                
+
+               
+                <div class="card mt-4">
+                    <div class="card-header color1 flex1">
+                        <h3>Experience</h3>
+                    </div>
+                    <div class="card-body">
+                        
+
+                        <ul id="eT5">
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, accusamus.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, accusamus.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, accusamus.</li>
+                        </ul>
+                    </div>
+                </div>
+
+               
+
+                <div class="card mt-4 color1">
+                    <div class="card-header flex1">
+                        <h3>Education</h3>
+                    </div>
+                    <div class="card-body">
+                        
+
+                        <ul id="edq5">
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, accusamus.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, accusamus.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, accusamus.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card mt-4 color1">
+                    <div class="card-header flex1">
+                        <h3>Skills</h3>
+                    </div>
+                    <div class="card-body">
+                        
+
+                        <ul id="skiq5">
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, accusamus.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, accusamus.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, accusamus.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card mt-4 color1">
+                    <div class="card-header flex1">
+                        <h3>Activities</h3>
+                    </div>
+                    <div class="card-body">
+                        
+
+                        <ul id="actq5">
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, accusamus.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, accusamus.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, accusamus.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container mt-3 text-center">
+                    <button onclick="printcv()" class="btn background1">
+                        Print CV
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- cv template3 -->
+    <div class="container" id="cv-template2">
+        <div class="row">
+            <div class="col-md-8 py-5 ">
+                <!-- first column -->
+                <h1 id="nameT4" class="text-center" style="font-weight:980;">Sayali Ratan Shriwastav</h1>
+                <br>
+                <hr>
+                <!-- objective card -->
+                <div class="card mt-4">
+                    <div class="card-header shade background1">
+                        <h3>Objective</h3>
+                    </div>
+                    <div class="card-body">
+                        <p id="objectiveT1">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat rerum maiores deserunt doloremque similique, obcaecati quidem saepe aspernatur, dolorum consequuntur accusantium dolor animi deleniti provident reiciendis magnam dolore facilis fuga unde quae. Quidem facilis a voluptatum, natus aut cum repudiandae optio expedita eum ab nulla itaque minima voluptate tenetur deleniti.
+                        </p>
+                    </div>
+                </div>
+
+                
+
+                <!-- Academic qualification -->
+
+                <div class="card mt-4">
+                    <div class="card-header shade background1">
+                        <h3>Academic Qualification</h3>
+                    </div>
+                    <div class="card-body">
+                        
+
+                        <ul id="aq1">
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, accusamus.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, accusamus.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, accusamus.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--Internship experience -->
+                <div class="card mt-4">
+                    <div class="card-header shade background1">
+                        <h3>Internships</h3>
+                    </div>
+                    <div class="card-body">
+                        
+
+                        <ul id="inT">
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, accusamus.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, accusamus.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, accusamus.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Project experience -->
+                <div class="card mt-4">
+                    <div class="card-header shade background1">
+                        <h3>Projects</h3>
+                    </div>
+                    <div class="card-body">
+                        
+
+                        <ul id="proT">
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, accusamus.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, accusamus.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, accusamus.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-md-4 text-center py-5 background1">
+
+                <img src="http://naikenviro.net/wp-content/uploads/2018/06/null.jpg" alt="" class="img-fluid myimg imgd" id="imgTemplate1"/>
+
+                <div class="container1 py-5">
+                    
+                    <p id="contactT1">+78410964512,+7834666778</p>
+                    <p id="addressT1">5678943657/86754 Sector 35 Noida ,India</p>
+
+                    <hr>
+                    <br>
+                    <p id="logoimp">
+                        <img src="/facebokk.png" alt="" class="myimg1" id="imgTemplate1"/>
+                        <a id="fbT1" href="" class="text-center" target="_blank">https://www.facebook.com/LearnCodeWith</a>
+                        
+                   
+                    </p>
+                    <br>
+                    <p id="logoimp">
+                        <img src="/instalogo.png" alt="" class="myimg1" id="imgTemplate1"/>
+                        <a id="instaT1" href="#1" class="text-center" target="_blank">https://www.instagram.com/LearnCodeWith</a>
+                    </p>
+                    <br>
+                    <p id="logoimp">
+                        <img src="/linkedin.png" alt="" class="myimg1" id="imgTemplate1"/>
+                        <a id="linkedT1" href="#1" class="text-center" target="_blank">https://www.linkedin.com/LearnCodeWith</a>
+                    </p>
+                    <br>
+                    <br>
+                    <div class="left1">
+                        <h3>Programming Languages</h3>
+                        <br>
+                        <ul id="plT">
+                            <li>C++</li>
+                            <br>
+                            <li>Python</li>
+                            <br>
+                            <li>Java</li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+                <!-- second column -->
+                
+                
+
+            </div>
+            <div class="container mt-3 text-center">
+                <button onclick="printcv()" class="btn background1">
+                    Print CV
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- template4 -->
+<div class="container" id="cv-template4">
+    <div class="row">
+        
+        <div class="container py-2 flex1">
+            <div>
+                <p id="temp4name">SAYALI &nbsp;RATAN &nbsp;SHRIWASTAV</p>
+               
+            </div>
+            
+            <div class="link2">
+                
+                <a id="temp4mail" href="sshriwastav2001@gmail.com">sshriwastav2001@gmail.com</a>
+                <br>
+                <span id="temp4contact">+91 7841096451</span>
+                <p id="temp4address">Niphad dist. Nashik, Maharashtra</p>
+                
+                
+            </div>
+            
+            
+        </div>
+        <!-- <hr style="width:100%;height:6px;border-width:0;width:97%;margin-left: auto;margin-right: auto; color:#022D36;background-color:#022D36;opacity:0.9">
+         -->
+        <div class="col-md-12 py-0">
+            
+           
+           
+                <div class="card mt-0">
+                    <div class="card-header color3 flex1">
+                        
+                        
+                        <h5 class="boldhead"><u>OBJECTIVE</u></h5>
+                    </div>
+                    <div class="card-body">
+                        <p id="objectivetemp4">
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;To Secure a responsible career opportunity to fully utilize my training and skills, while making a significant contribution to the success of the company.
+                        </p>
+                    </div>
+                </div>
+            
+            
+
+           
+            <div class="card mt-1">
+                <div class="card-header color3 flex1">
+                    <h5 class="boldhead">EDUCATIONAL &nbsp; QUALIFICATION</h5>
+                </div>
+                <div class="card-body">
+                    
+
+                    <table class="table table-sm table-bordered">
+                        <thead>
+                          <tr>
+                            <th>Degree</th>
+                            <th>Institution</th>
+                            <th>University/ Board</th>
+                            <th>Year</th>
+                            <th>Marks</th>
+                            <th> </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td id="deg1">T.E.(Computer)</td>
+                            <td id="coll1">MVPS's KBTCOE, Nashik</td>
+                            <td id="uni1">University of Pune</td>
+                            <td id="yr1">2023</td>
+                            <td id="mark1">9.57 sgpa</td>
+                            <td rowspan="3" id="agg1">9.52 cgpa</td>
+
+                          </tr>
+                          <tr>
+                            <td id="deg2">S.E.(Computer)</td>
+                            <td id="coll2">MVPS's KBTCOE, Nashik</td>
+                            <td id="uni2">University of Pune</td>
+                            <td id="yr2">2022</td>
+                            <td id="mark2">9.43 sgpa</td>
+                            
+
+                          </tr>
+                          <tr>
+                            <td id="deg3">F.E.(Computer)</td>
+                            <td id="coll3">MVPS's KBTCOE, Nashik</td>
+                            <td id="uni3">University of Pune</td>
+                            <td id="yr3">2021</td>
+                            <td id="mark3">9.57 sgpa</td>
+                           
+                          </tr>
+
+                          <tr>
+                            <td id="deg4">H.S.C</td>
+                            <td id="coll4">Vainateya Jr. college of Science, Niphad</td>
+                            <td id="uni4">Maharashtra Board</td>
+                            <td id="yr4">2020</td>
+                            <td id="mark4" colspan="2">90.77 %</td>
+                           
+                          </tr>
+
+                          <tr>
+                            <td id="deg5">S.S.C</td>
+                            <td id="coll5">Vainateya Vidyalaya, Niphad</td>
+                            <td id="uni5">Maharashtra Board</td>
+                            <td id="yr5">2018</td>
+                            <td id="mark5" colspan="2">96.80 %</td>
+                           
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+
+           
+
+            <div class="card mt-1">
+                <div class="card-header color3 flex1">
+                    <h5 class="boldhead">TECHNICAL &nbsp; SKILLS</h5>
+                </div>
+                <div class="card-body">
+                    
+
+                    <table class="table table-sm">
+                        
+                        <tbody>
+                          <tr>
+                            <td class="boldd">Languages</td>
+                            <td id="language1">JAVA, HTML, CSS, C++, JavaScript, C# .NET</td>
+                            
+
+                          </tr>
+                          <tr>
+                            <td class="boldd">Databases</td>
+                            <td id="database1">MySQL, Oracle, MongoDB</td>
+                            
+
+                          </tr>
+                          
+
+                          
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+
+            <div class="card mt-1">
+                <div class="card-header color3 flex1">
+                    <h5 class="boldhead">INTERNSHIP</h5>
+                </div>
+                <div class="card-body">
+                    
+
+                    <ol id="internship1">
+                        <li>
+                            <span class="boldd">Exposys datalabs Internship</span>
+                            <br>
+                            Worked as Frontend Developer from 1 January 2023 to 31 January 2023 where I have worked on technologies like HTML, CSS and JavaScript.
+                            
+                            <br>
+                            </li>
+                            <li>
+                                
+                                <span class="boldd">The Innovative Solutions</span>
+                                <br>
+                                <span>Worked as Backend Developer from February 2023 to May 2023 and worked on technologies like .NET, C# and SQL. </span>
+                                
+                                </li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="card mt-1">
+                <div class="card-header color3 flex1">
+                    <h5 class="boldhead">PROJECTS</h5>
+                </div>
+                <div class="card-body">
+                    
+
+                    <ul id="projects1">
+                        <li>
+                            <span class="boldd"> ROCO - Breaker </span>
+                            <br>
+                            <span> It is a simple and basic game like tic-tac-toe created using C++.
+                            </span>
+                            <br>
+                            
+                            </li>
+                            <li>
+                                
+                                <span class="boldd">Online Resume Builder </span>
+                                <br>
+                                <span>
+                                    It is a website which helps freshers or students to build their resume according to the format of the company for which they want to apply. For this, HTML,CSS and Javascript is used.
+                                    <a href="#1">sshriwastav2001@gmail.com</a></span>
+                                    
+                                    <br>
+                                </li>
+
+                                <li>
+                                
+                                    <span class="boldd">Hostel Management System using Mysql  </span>
+                                    <br>
+                                    <span>
+                                        The interface is provided using Java and we can add new admissions , delete admission,etc using mysql database.</span>
+                                    <br>
+                                    </li>
+
+                                    <li>
+                                
+                                        <span class="boldd">Car Website</span>
+                                        <br>
+                                        <span>
+                                            It is a frontend car website designed using HTML, CSS and Javascript.
+                                            <a href="https://sayali8712.github.io/carwebsite.github.io/">https://sayali8712.github.io/carwebsite.github.io/</a></span>
+                                            <br>
+                                        </li>
+
+                                        <li>
+                                
+                                            <span class="boldd">Online Resume Builder wesite using .NET framework-</span>
+                                            <br>
+                                            <span>
+                                                Upgraded Online Resume Builder using .NET framework. SQL server is used to store the data of user and identity of user.
+                                                <a href="https://sayali1243.bsite.net/">https://sayali1243.bsite.net/</a>
+                                                <br>
+                                            </span>
+                                                
+                                            </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card mt-1">
+                <div class="card-header color3 flex1">
+                    <h5 class="boldhead">SKILLS</h5>
+                </div>
+                <div class="card-body">
+                    
+
+                    <ul id="skills1">
+                        <li>Patience</li>
+                        <li>Quick Learner</li>
+                        <li>Positive Attitude</li>
+                        <li>Time Management</li>
+                        <li>self motivation</li>
+                    </ul>
+                </div>
+            </div>
+
+            
+
+                <div class="card mt-1">
+                    <div class="card-header color3 flex1">
+                        <h5 class="boldhead">HOBBIES</h5>
+                    </div>
+                    <div class="card-body">
+                        
+
+                        <ul id="hobbies1">
+                            <li>Sketching</li>
+                            <li>Listening Music</li>
+                            <li>Travelling</li>
+                        </ul>
+                    </div>
+                    </div>
+
+
+                    <div class="card mt-1">
+                        <div class="card-header color3 flex1">
+                            <h5 class="boldhead">PERSONAL &nbsp; INFORMATION</h5>
+                        </div>
+                        <div class="card-body">
+                            
+    
+                            <table class="table table-sm table-striped">
+                                
+                                <tbody>
+                                  <tr>
+                                    <td class="boldd">Date Of Birth</td>
+                                    <td id="dob1">20 January 2003</td>
+                                    
+    
+                                  </tr>
+                                  <tr>
+                                    <td class="boldd">Gender</td>
+                                    <td id="gender1">Female</td>
+                                    
+    
+                                  </tr>
+                                  
+
+                                  <tr>
+                                    <td class="boldd">Languages Known</td>
+                                    <td id="lang11">Marathi, Hindi, English</td>
+                                    
+    
+                                  </tr>
+                                  
+    
+                                  
+                                </tbody>
+                              </table>
+                        </div>
+                    </div>
+
+                    <div class="card mt-1">
+                        <div class="card-header color3 flex1">
+                            <h5 class="boldhead">DECLARATION</h5>
+                        </div>
+                        <div class="card-body">
+                            
+    
+                            <P>I hereby declare that the information furnished above is true to the best of my knowledge.</P>
+                        </div>
+
+            
+        </div>
+    </div>
+</div>
+<div class="container mt-3 text-center">
+    <button onclick="printcv()" class="btn3 background1">
+        Print CV
+    </button>
+</div>
+
+
+
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="script.js"></script>  
+</body>
+</html>
